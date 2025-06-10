@@ -28,21 +28,21 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.listBoxIsAvailableProduct = new System.Windows.Forms.ListBox();
+            this.listBoxAvailableProduct = new System.Windows.Forms.ListBox();
             this.listBoxCheckoutItems = new System.Windows.Forms.ListBox();
             this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
             this.buttonCreateCheck = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
-            // listBoxIsAvailableProduct
+            // listBoxAvailableProduct
             // 
-            this.listBoxIsAvailableProduct.FormattingEnabled = true;
-            this.listBoxIsAvailableProduct.ItemHeight = 16;
-            this.listBoxIsAvailableProduct.Location = new System.Drawing.Point(97, 50);
-            this.listBoxIsAvailableProduct.Name = "listBoxIsAvailableProduct";
-            this.listBoxIsAvailableProduct.Size = new System.Drawing.Size(120, 84);
-            this.listBoxIsAvailableProduct.TabIndex = 0;
+            this.listBoxAvailableProduct.FormattingEnabled = true;
+            this.listBoxAvailableProduct.ItemHeight = 16;
+            this.listBoxAvailableProduct.Location = new System.Drawing.Point(97, 50);
+            this.listBoxAvailableProduct.Name = "listBoxAvailableProduct";
+            this.listBoxAvailableProduct.Size = new System.Drawing.Size(120, 84);
+            this.listBoxAvailableProduct.TabIndex = 0;
             // 
             // listBoxCheckoutItems
             // 
@@ -65,7 +65,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(372, 247);
+            this.label1.Location = new System.Drawing.Point(363, 250);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(94, 16);
             this.label1.TabIndex = 3;
@@ -79,7 +79,7 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.buttonCreateCheck);
             this.Controls.Add(this.listBoxCheckoutItems);
-            this.Controls.Add(this.listBoxIsAvailableProduct);
+            this.Controls.Add(this.listBoxAvailableProduct);
             this.Name = "FormMain";
             this.Text = "FormCheckBuy";
             this.ResumeLayout(false);
@@ -89,7 +89,7 @@
 
         #endregion
 
-        private System.Windows.Forms.ListBox listBoxIsAvailableProduct;
+        private System.Windows.Forms.ListBox listBoxAvailableProduct;
         private System.Windows.Forms.ListBox listBoxCheckoutItems;
         private System.ComponentModel.BackgroundWorker backgroundWorker1;
         private System.Windows.Forms.Button buttonCreateCheck;

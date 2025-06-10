@@ -15,6 +15,8 @@ namespace SuperMarket
             InitializeComponent();
             InitializeProducts();
             checkoutItems = new List<CheckoutItem>();
+
+
         }
 
         private void InitializeProducts()
@@ -28,13 +30,13 @@ namespace SuperMarket
             new Product("Масло", 150)
         };
 
-            listBoxIsAvailableProduct.DataSource = availableProducts;
-            listBoxIsAvailableProduct.DisplayMember = "ToString";
+            listBoxAvailableProduct.DataSource = availableProducts;
+            listBoxAvailableProduct.DisplayMember = "ToString";
         }
 
         private void listBoxAvailableProduct_DoubleClick(object sender, EventArgs e)
         {
-            if (listBoxIsAvailableProduct.SelectedItem is Product selectedProduct)
+            if (listBoxAvailableProduct.SelectedItem is Product selectedProduct)
             {
                 var quantityForm = new QuantityForm(selectedProduct);
                 if (quantityForm.ShowDialog() == DialogResult.OK)
@@ -53,11 +55,14 @@ namespace SuperMarket
             listBoxCheckoutItems.DisplayMember = "ToString";
         }
 
-        private void btnCreateCheck_Click(object sender, EventArgs e)
+        private void buttenCreateCheck_Click(object sender, EventArgs e)
         {
             decimal total = checkoutItems.Sum(item => item.TotalPrice);
             MessageBox.Show($"Общая сумма: {total:C}", "Чек сформирован");
             checkoutItems.Clear();
             UpdateCheckoutList();
         }
+
+
     }
+}
