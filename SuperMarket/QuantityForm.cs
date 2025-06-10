@@ -21,12 +21,23 @@ namespace SuperMarket
             InitializeComponent();
             SelectedProduct = product;
             this.Text = $"Введите количество для {product.Name}";
+            buttonConfirm.Click += buttenConfirm_Click;
         }
 
         private void buttenConfirm_Click(object sender, EventArgs e)
         {
             DialogResult = DialogResult.OK;
             Close();
+        }
+
+        private void numQuantity_ValueChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void buttonConfirm_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

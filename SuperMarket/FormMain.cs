@@ -15,7 +15,7 @@ namespace SuperMarket
             InitializeComponent();
             InitializeProducts();
             checkoutItems = new List<CheckoutItem>();
-
+            listBoxAvailableProduct.DoubleClick += listBoxAvailableProduct_DoubleClick;
 
         }
 

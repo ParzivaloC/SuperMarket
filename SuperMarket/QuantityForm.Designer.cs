@@ -39,6 +39,7 @@
             this.numQuantity.Name = "numQuantity";
             this.numQuantity.Size = new System.Drawing.Size(120, 22);
             this.numQuantity.TabIndex = 0;
+            this.numQuantity.ValueChanged += new System.EventHandler(this.numQuantity_ValueChanged);
             // 
             // buttonConfirm
             // 
@@ -48,6 +49,7 @@
             this.buttonConfirm.TabIndex = 1;
             this.buttonConfirm.Text = "Ok";
             this.buttonConfirm.UseVisualStyleBackColor = true;
+            this.buttonConfirm.Click += new System.EventHandler(this.buttonConfirm_Click);
             // 
             // QuantityForm
             // 

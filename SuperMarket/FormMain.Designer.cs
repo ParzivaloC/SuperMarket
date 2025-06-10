@@ -55,12 +55,13 @@
             // 
             // buttonCreateCheck
             // 
-            this.buttonCreateCheck.Location = new System.Drawing.Point(339, 111);
+            this.buttonCreateCheck.Location = new System.Drawing.Point(335, 111);
             this.buttonCreateCheck.Name = "buttonCreateCheck";
             this.buttonCreateCheck.Size = new System.Drawing.Size(138, 23);
             this.buttonCreateCheck.TabIndex = 2;
             this.buttonCreateCheck.Text = "Выдать чек";
             this.buttonCreateCheck.UseVisualStyleBackColor = true;
+            this.buttonCreateCheck.Click += new System.EventHandler(this.buttenCreateCheck_Click);
             // 
             // label1
             // 
